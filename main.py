@@ -81,4 +81,4 @@ if __name__ == "__main__":
         wc.save_file(results, args.output)
 
     # 메모리 해제
-    ws.release_resources()
+    wc.release_resources()
