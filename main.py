@@ -3,8 +3,9 @@ import torch
 import gc
 import os
 import argparse
+from decorator import singleton
 
-
+@singleton
 class WhisperTranscriber:
     def __init__(self, model_size="base"):
         self.model = whisper.load_model(name=model_size)
